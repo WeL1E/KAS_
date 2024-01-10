@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2024 at 08:44 AM
+-- Generation Time: Jan 10, 2024 at 01:30 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -39,7 +39,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `nama`, `username`, `password`) VALUES
-(1, 'ALDO', 'admin', 'admin'),
+(1, 'ALDO', 'admin01', 'admin'),
 (3, 'ALVIRA', 'admin', '12345');
 
 -- --------------------------------------------------------
@@ -59,7 +59,8 @@ CREATE TABLE `anggota` (
 --
 
 INSERT INTO `anggota` (`id`, `nama`, `alamat`) VALUES
-(40, 'asep', 'cihideung');
+(40, 'asep', 'cihideung'),
+(44, 'mangeak', 'ooo');
 
 -- --------------------------------------------------------
 
@@ -99,9 +100,7 @@ CREATE TABLE `masuk` (
 --
 
 INSERT INTO `masuk` (`id`, `nama`, `jumlah`, `tanggal`) VALUES
-(18, 'asep', 2000, '2024-01-01'),
-(20, 'asep saepulloh', 1000000000, '2024-01-08'),
-(22, 'geus  mayar', 100000, '2024-01-15');
+(18, 'asep', 2000, '2024-01-01');
 
 --
 -- Indexes for dumped tables
@@ -145,13 +144,13 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `keluar`
 --
 ALTER TABLE `keluar`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `masuk`
