@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2024 at 05:22 AM
+-- Generation Time: Jan 10, 2024 at 08:44 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -39,8 +39,8 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `nama`, `username`, `password`) VALUES
-(1, 'udin', 'admin', 'admin'),
-(2, 'bernad', 'nad', 'admin');
+(1, 'ALDO', 'admin', 'admin'),
+(3, 'ALVIRA', 'admin', '12345');
 
 -- --------------------------------------------------------
 
@@ -59,8 +59,7 @@ CREATE TABLE `anggota` (
 --
 
 INSERT INTO `anggota` (`id`, `nama`, `alamat`) VALUES
-(26, 'ingyah', 'breves'),
-(27, 'hhh', 'ddd');
+(40, 'asep', 'cihideung');
 
 -- --------------------------------------------------------
 
@@ -80,10 +79,7 @@ CREATE TABLE `keluar` (
 --
 
 INSERT INTO `keluar` (`id`, `keterangan`, `jumlah`, `tanggal`) VALUES
-(1, 'beli sapu', 10000, '2024-01-01'),
-(2, 'beli pengki', 8000, '2024-01-01'),
-(3, 'soklin', 2000, '2024-01-02'),
-(4, 'beli rambutan', 200000, '2024-01-01');
+(5, 'beli lakban', 2000, '2024-01-04');
 
 -- --------------------------------------------------------
 
@@ -103,12 +99,9 @@ CREATE TABLE `masuk` (
 --
 
 INSERT INTO `masuk` (`id`, `nama`, `jumlah`, `tanggal`) VALUES
-(1, 'bernad', 20000, '2023-12-05'),
-(2, 'asep', 20000, '2021-12-08'),
-(7, 'penjok', 10000, '2024-01-01'),
-(9, 'cilok', 20000, '2024-01-08'),
-(10, 'penjok', 0, '2024-01-02'),
-(11, 'kasbon', 0, '2024-01-03');
+(18, 'asep', 2000, '2024-01-01'),
+(20, 'asep saepulloh', 1000000000, '2024-01-08'),
+(22, 'geus  mayar', 100000, '2024-01-15');
 
 --
 -- Indexes for dumped tables
@@ -146,25 +139,25 @@ ALTER TABLE `masuk`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `keluar`
 --
 ALTER TABLE `keluar`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `masuk`
 --
 ALTER TABLE `masuk`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

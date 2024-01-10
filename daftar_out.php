@@ -39,7 +39,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) { //memeriksa id dan
 <div class="w3-teal">
     <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
     <div class="w3-container">
-        <h1><a href="home.php" class="d">Data Pemasukan Kas</a></h1>
+        <h1><a href="home.php" class="d">Data Pengeluaran Kas</a></h1>
         <div class="tag">
             <h6 class="p">Selamat Datang! <?php echo $_SESSION['nama']; ?></h6>
         <a href="logout.php" class="q">Logout</a>

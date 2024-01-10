@@ -73,7 +73,20 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
     }
     ?>
 </table>
-
+<?php //proses hapus data dari database
+if(isset($_GET['hapus'])) {
+    $id_hapus = $_GET['hapus_id'];
+    
+    $query_delete = "DELETE FROM masuk WHERE id='$id_hapus'";
+    
+    if (mysqli_query($conn, $query_delete)) {
+        echo "<script>alert('Data berhasil dihapus');</script>";
+        echo "<meta http-equiv=refresh content=2;URL='daftar_out.php'>";
+    } else {
+        echo 'Error: ' . mysqli_error($conn);
+    }
+}
+?>
 <footer>
     <p>Footer</p>
 </footer>
